@@ -51,8 +51,8 @@ setup mysql-1 sink
 
 verify
 ------
-add/modify/delete data of table inventory.customers from mysql-1
+add/modify/delete data of table inventory.customers or inventory.addresses from mysql-1
 verify same changes affect mysql-2
 
-add/modify/delete data of table inventory.customers from mysql-2
+add/modify/delete data of table inventory.customers or inventory.addresses from mysql-2
 verify same changes affect mysql-1
