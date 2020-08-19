@@ -3,7 +3,7 @@
     "config": {
         "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
         "tasks.max": "1",
-        "topics": "customers",
+        "topics": "customers,addresses",
         "connection.url": "jdbc:mysql://172.20.9.18:23306/inventory?user=root&password=debezium",
         "transforms": "unwrap",
         "transforms.unwrap.type": "io.debezium.transforms.ExtractNewRecordState",
