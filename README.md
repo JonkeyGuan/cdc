@@ -7,7 +7,7 @@ git clone https://github.com/JonkeyGuan/cdc.git
 
 setup mysql-1
 -------------
-open new termail
+open new terminal
 
 cd cdc/mysql-1
 adjust ip address in below files under cdc/mysql-1/:
@@ -20,7 +20,7 @@ source-delete.sh
 
 docker-compose up
 
-open new termail
+open new terminal
 setup mysql-1 source
 ./source-add.sh
 
@@ -29,7 +29,7 @@ setup mysql-2 sink
 
 setup mysql-2
 -------------
-open new termail
+open new terminal
 
 cd cdc/mysql-2
 adjust ip address in below files under cdc/mysql-2/:
@@ -42,7 +42,7 @@ source-delete.sh
 
 docker-compose up
 
-open new termail
+open new terminal
 setup mysql-2 source
 ./source-add.sh
 
