@@ -1,0 +1,15 @@
+version: '2'
+services:
+  mysql-2:
+    image: debezium/example-mysql:${DEBEZIUM_VERSION}
+    ports:
+     - 23306:3306
+    environment:
+     - MYSQL_ROOT_PASSWORD=debezium
+     - MYSQL_USER=mysqluser
+     - MYSQL_PASSWORD=mysqlpw 
+  adminer-2:
+    image: adminer
+    restart: always
+    ports:
+     - 28080:8080  

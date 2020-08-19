@@ -1,0 +1,17 @@
+{
+    "name": "jdbc-sink-mysql-1",
+    "config": {
+        "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+        "tasks.max": "1",
+        "topics": "customers",
+        "connection.url": "jdbc:mysql://172.20.9.18:13306/inventory?user=root&password=debezium",
+        "transforms": "unwrap",
+        "transforms.unwrap.type": "io.debezium.transforms.ExtractNewRecordState",
+        "transforms.unwrap.drop.tombstones": "false",
+        "auto.create": "true",
+        "insert.mode": "upsert",
+        "delete.enabled": "true",
+        "pk.fields": "id",
+        "pk.mode": "record_key"
+    }
+}
